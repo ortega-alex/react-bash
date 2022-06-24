@@ -1,0 +1,44 @@
+{
+    "rest-client.environmentVariables": {
+        "local": {
+            "version": "",
+            "host": "",
+            "ENCODING": "",
+            "token": ""
+        },
+        "dev": {
+            "version": "",
+            "host": "",
+            "ENCODING": "",
+            "token": ""
+        },
+        "production": {
+            "version": "",
+            "host": "",
+            "ENCODING": "",
+            "token": ""
+        }
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/node_modules": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/libs": false
+    },
+    "prettier.requireConfig": true,
+    "[javascript]": {
+        "editor.formatOnSave": true,        
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,        
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "intelephense.environment.phpVersion": "7.3"
+}

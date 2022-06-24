@@ -1,0 +1,30 @@
+:root {
+    --primary: #1e88e5;
+    --primary-dark: #005cb2;
+    --primary-light: #6ab7ff;
+    --success: #64dd17;
+    --success-dark: #1faa00;
+    --success-light: #9cff57;
+    --warning: #ffb300;
+    --warning-dark: #c68400;
+    --warning-light: #ffe54c;
+    --danger: #ff3d00;
+    --danger-dark: #c30000;
+    --danger-light: #ff7539;
+    --gray: #bdbdbd;
+    --gay-dark: #8d8d8d;
+    --gray-light: #efefef;
+    --black: #212121;
+    --black-light: #3F3F3F;
+    --white: #ffffff;
+    --white-light: #ffffffb3;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
