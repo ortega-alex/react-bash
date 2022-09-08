@@ -41,7 +41,7 @@ rm -rf src/*
 cp -R $LOCATION/sources/web/src/* $DIR/web/src
 
 # CREACION DE DIRECTORIOS
-mkdir src/adapters src/assests src/components src/hooks src/interceptors src/pages src/partials src/redux src/services src/utilities  src/styled-components
+mkdir src/adapters src/assests src/components src/hooks src/interceptors src/pages src/partials src/redux src/services src/utilities  src/styled-components src/guards src/models
 
 # QUITAR CARED DE package.json
 sed -i 's/"^/"/g' package.json
