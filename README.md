@@ -15,3 +15,7 @@
 #   √ What format do you want your config file to be in? · JSON
 
 # AL TERMINAR LA CONFIGURACION SE ABIRA CON VSCODE
+
+# SOLO CREAR UN NUEVO PROYECTO CON VITE 
+# bash new-react.sh "ruta" "nombre del proyect"
+# EJEMPLO:  bash new-react.sh /e/Documentos/desarrollo/oca sistema-oca
