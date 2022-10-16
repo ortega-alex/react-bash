@@ -29,7 +29,7 @@ Al terminar el proceso de instalación, se abrira con vscode
 </strong>
 <br/>
 
-## Solo frontdend
+## Solo frontend
 
 ```bash
   bash new-react.sh "ruta" "nombre del proyect"
