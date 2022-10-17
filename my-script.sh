@@ -37,11 +37,11 @@ mv src/*.svg public/
 # ELIMINA CONTENIDO DE LA CARPETA SRC
 rm -rf src/*
 
-# COPIA DE ARCHIVOS BASICOS AL SRC
-cp -R $LOCATION/sources/web/src/* $DIR/web/src
-
 # CREACION DE DIRECTORIOS
 mkdir src/adapters src/assests src/components src/context src/guards src/hooks src/interceptors  src/models src/pages src/redux src/services src/styled-components src/utilities 
+
+# COPIA DE ARCHIVOS BASICOS AL SRC
+cp -R $LOCATION/sources/web/src/* $DIR/web/src
 
 # QUITAR CARED DE package.json
 sed -i 's/"^/"/g' package.json
@@ -56,7 +56,11 @@ npx eslint --init
 cp -R $LOCATION/sources/web/config/* $DIR/ && cp -R $LOCATION/sources/web/config/.* $DIR/
 
 # COLOCAMOS EL NOMBRE DEL PROYECTO AL index.html Y agregamos version, informacion del autor y comandos de eslint y prettier
-sed -i "s/PROJECT/${2^^}/g" index.html && sed -i '5 a \\t \"author\": { \n \t \t \"name\": \"Alex Ortega\", \n \t \t \"email\": \"mortegalex27@outlook.es\" \n \t },' package.json && sed -i '13 a , \t \t \"format\": \"prettier -w .\", \n \t \t \"lint\": \"eslint --fix . --ext .js,.jsx\"' package.json && sed -i 's/"0.0.0/"1.0.0/g' package.json
+sed -i "s/PROJECT/${2^^}/g" index.html 
+sleep 3
+sed -i '5 a \\t \"author\": { \n \t \t \"name\": \"Alex Ortega\", \n \t \t \"email\": \"mortegalex27@outlook.es\" \n \t },' package.json 
+sleep 1
+sed -i '13 a , \t \t \"format\": \"prettier -w .\", \n \t \t \"lint\": \"eslint --fix . --ext .js,.jsx\"' package.json && sed -i 's/"0.0.0/"1.0.0/g' package.json
 
 # LINTER
 npx eslint --fix . --ext .js,.jsx
